@@ -1,3 +1,5 @@
+import { truncateSync } from 'fs';
+
 export const environment = {
-  production: true
+  production: truncateSync
 };
