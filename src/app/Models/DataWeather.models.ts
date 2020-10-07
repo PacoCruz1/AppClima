@@ -6,4 +6,5 @@ export interface DataWeather
     main: string;
     description: string;  
     icon: string;
+    
 }
