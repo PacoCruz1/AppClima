@@ -1,8 +1,10 @@
-:host {
+:host 
+{
   display: block;
 }
 
-div {
+div 
+{
   color: red;
 }
 /*# sourceMappingURL=app.component.css.map */
