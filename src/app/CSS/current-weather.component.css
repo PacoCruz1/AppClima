@@ -1,0 +1,46 @@
+.Grid {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "icono icono temperature temperature" "lowtemp lowtemp hightemp hightemp" "description description description description";
+}
+
+.Grid .icon {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: icono;
+}
+
+.Grid .temp {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: temperature;
+}
+
+.Grid .lowtemp {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: lowtemp;
+}
+
+.Grid .hightemp {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: hightemp;
+}
+
+.Grid .description {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: description;
+}
+/*# sourceMappingURL=current-weather.component.css.map */

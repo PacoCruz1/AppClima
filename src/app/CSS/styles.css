@@ -10800,9 +10800,21 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+/* Webfont: Lato-Regular */
+@font-face {
+  font-family: 'LatoWeb';
+  src: url("../src/app/Fonts/Lato/Lato-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../src/app/Fonts/Lato/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../src/app/Fonts/Lato/Lato-Regular.woff2") format("woff2"), url("../src/app/Fonts/Lato/Lato-Regular.woff") format("woff"), url("../src/app/Fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
 body {
   width: 100vw;
   height: 100vh;
+  font-family: "LatoWeb";
   background-color: #eaeaea;
   color: #252a34;
 }

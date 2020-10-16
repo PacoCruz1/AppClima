@@ -5,10 +5,14 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CurrentWeatherComponent } from './Components/CurrentWeather/current-weather.component';
+import { WeatherIconComponent } from './Components/WeatherIcon/weather-icon.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CurrentWeatherComponent,
+    WeatherIconComponent
   ],
   imports: [
     BrowserModule,

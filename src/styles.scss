@@ -2,10 +2,26 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./app/Colors";
 
+/* Webfont: Lato-Regular */
+@font-face 
+{
+    font-family: 'LatoWeb';
+    src: url('../src/app/Fonts/Lato/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../src/app/Fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../src/app/Fonts/Lato/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('../src/app/Fonts/Lato/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../src/app/Fonts/Lato/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
 body
 {
     width: 100vw;
     height: 100vh;
+    font-family: "LatoWeb";
     background-color: $light;
     color: $dark;
 }

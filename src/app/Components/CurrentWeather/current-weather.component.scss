@@ -1,0 +1,37 @@
+.Grid
+{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "icono icono temperature temperature"
+    "lowtemp lowtemp hightemp hightemp"
+    "description description description description";
+
+        .icon
+        {
+            grid-area: icono;
+        }
+
+        .temp
+        {
+            grid-area: temperature;
+        }
+
+        .lowtemp
+        {
+            grid-area: lowtemp;
+        }
+
+        .hightemp
+        {
+            grid-area: hightemp;
+        }
+
+        .description
+        {
+            grid-area: description;            
+        }
+}
+
