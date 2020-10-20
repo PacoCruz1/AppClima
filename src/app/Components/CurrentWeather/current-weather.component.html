@@ -6,7 +6,7 @@
           <div>{{weather.icon}}</div>
         </div>
         <div class="temp">
-          <p>{{ weather.temp }}º</p>
+          <p>{{ weather.temp | temperatureConverter : 'C'}}º</p>
         </div>
 
         <div class="lowtemp">
