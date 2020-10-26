@@ -2,8 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-weather-icon',
-  templateUrl: './weather-icon.component.html',
-  styleUrls: ['./weather-icon.component.scss']
+  templateUrl: './WeatherIcon.component.html',
+  styleUrls: ['./WeatherIcon.component.scss']
 })
 export class WeatherIconComponent implements OnInit {
 

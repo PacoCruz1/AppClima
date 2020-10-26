@@ -65,7 +65,7 @@ export class ForescatService
 
     });
 
-    return minMaxPerDay;
+    return Object.values(minMaxPerDay) ;
   }
 
   getAll(coords: Coords)
