@@ -3,10 +3,11 @@
     <div class="container">
       <div class="card bg-light Grid" *ngIf="weatherService.$weather | async as weather">
         <div class="icon">
-          <div>{{weather.icon}}</div>
+          <app-weather-icon [code]="weather.cod" ></app-weather-icon>
         </div>
         <div class="temp">
-          <p>{{ weather.temp | temperatureConverter : 'C'}}º</p>
+          <p>Temperatura</p>
+          <p class="big">{{ weather.temp}}º</p>
         </div>
 
         <div class="lowtemp">

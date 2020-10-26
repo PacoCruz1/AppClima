@@ -13,9 +13,9 @@ export class CurrentWeatherService
 {
 
   public weatherSubject : Subject<any> = new Subject<any>();
-  public $weather : Observable<any> = this.weatherSubject.asObservable();
+  public $weather : Observable<any>;
 
-  endPpoint: string = "https://api.openweathermap.org/data/2.5/weather"
+  endPpoint: string = "https://api.openweathermap.org/data/2.5/weather";
 
   constructor(private http: HttpClient) 
   {
@@ -42,7 +42,7 @@ export class CurrentWeatherService
   getAll(coords: Coords)
   {
     let args: string = `?lat=${coords.lat}&lon=${coords.long}&appid=${environment.key}&units=metric`;
-    let url = "this.endPpoint + args";
+    let url = this.endPpoint + args;
 
     if(isDevMode)
     {
