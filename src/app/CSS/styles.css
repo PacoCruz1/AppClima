@@ -10818,4 +10818,9 @@ body {
   background-color: #eaeaea;
   color: #252a34;
 }
+
+body .repeat .card {
+  float: left;
+  margin: 15px !important;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -1,7 +1,20 @@
+app-weather-car .card {
+  margin-bottom: 30px;
+}
+
+.Grid .lowtemp, .Grid .hightemp {
+  color: #ff2e63;
+}
+
+.Grid .lowtemp span, .Grid .hightemp span {
+  color: #252a34;
+  opacity: 0.56;
+  font-size: 0.6em;
+}
+
 .card {
   width: 300px;
   min-width: 300px;
-  float: left;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 16px;
@@ -42,6 +55,7 @@
   font-weight: bold;
 }
 
+.Grid .lowtemp,
 .Grid .lowtemp {
   -ms-grid-row: 2;
   -ms-grid-column: 1;

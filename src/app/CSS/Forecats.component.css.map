@@ -1,9 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,gBAAgB,CAChB;EACI,WAAW,EAAE,IAAI;CACpB",
     "sources": [
-        "../Components/Forecats/forecats.component.scss"
+        "../Components/Forecats/Forecats.component.scss"
     ],
     "names": [],
-    "file": "forecats.component.css"
+    "file": "Forecats.component.css"
 }
