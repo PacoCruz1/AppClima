@@ -1,0 +1,3 @@
+<div class="containerRepeat">
+    <app-weather-car class="repeat" [weather]="weather" *ngFor="let weather of forecastService.$weather | async"></app-weather-car>
+</div>

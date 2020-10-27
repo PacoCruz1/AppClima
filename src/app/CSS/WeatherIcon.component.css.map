@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../Components/WeatherIcon/WeatherIcon.component.scss"
+    ],
+    "names": [],
+    "file": "WeatherIcon.component.css"
+}

@@ -1,1 +1,29 @@
-<p>weather-car works!</p>
+
+<div class="card bg-light Grid" *ngIf="weather">
+  <div class="icon">
+    <app-weather-icon [code]="weather.cod" ></app-weather-icon>
+  </div>
+  <div class="temp" *ngIf="weather.temp">
+    <p>Temperatura</p>
+    <p class="big">{{ weather.temp }}º</p>
+  </div>
+
+  <div class="lowtemp" *ngIf="weather.minMaxTemp">
+    <p>
+      {{ weather.minMaxTemp.min }}º
+      <span>Minima</span>
+    </p>    
+  </div>
+
+  <div class="hightemp" *ngIf="weather.minMaxTemp">
+    <p>
+      {{ weather.minMaxTemp.max }}º
+      <span>Maxima</span>
+    </p>
+  </div>
+
+  <div class="description">
+    <h2>{{ weather.name }}</h2>
+    <p>{{ weather.description }}</p>
+  </div>
+</div>

@@ -24,4 +24,14 @@ body
     font-family: "LatoWeb";
     background-color: $light;
     color: $dark;
+
+    .repeat 
+    {
+        .card
+        {
+            float: left;
+            margin: 15px !important;
+        }
+    }
+
 }

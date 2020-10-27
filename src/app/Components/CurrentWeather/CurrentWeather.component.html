@@ -1,28 +1,4 @@
 
-<div class="jumbotron jumbotron-fluid bg-transparent">
-    <div class="container">
-      <div class="card bg-light Grid" *ngIf="weatherService.$weather | async as weather">
-        <div class="icon">
-          <app-weather-icon [code]="weather.cod" ></app-weather-icon>
-        </div>
-        <div class="temp">
-          <p>Temperatura</p>
-          <p class="big">{{ weather.temp}}º</p>
-        </div>
-
-        <div class="lowtemp">
-          <p>lowtemp</p>
-        </div>
-
-        <div class="hightemp">
-          <p>hightemp</p>
-        </div>
-
-        <div class="description">
-          <h2>{{ weather.name }}</h2>
-          <p>{{ weather.description }}</p>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+<app-weather-car [weather] = "weatherService.$weather | async">
+    
+</app-weather-car>

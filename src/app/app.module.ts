@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { CurrentWeatherComponent } from './Components/CurrentWeather/CurrentWeather.component';
 import { WeatherIconComponent } from './Components/WeatherIcon/WeatherIcon.component';
 import { WeatherCarComponent } from './Components/WeatherCar/WeatherCar.component';
+import { ForecatsComponent } from './Components/Forecats/Forecats.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CurrentWeatherComponent,
     WeatherIconComponent,
-    WeatherCarComponent
+    WeatherCarComponent,
+    ForecatsComponent
   ],
   imports: [
     BrowserModule,
