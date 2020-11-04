@@ -1,6 +1,6 @@
-<div [@loading]="elements.length">
+<div [@loading]="elements.length" *ngIf="!(currentWeatherService.$weather | async)">
   <div class="circle" 
        *ngFor="let color of elements" 
        [ngStyle]="{'background-color': color}">
-</div>  
+  </div>  
 </div>

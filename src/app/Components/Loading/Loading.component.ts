@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CurrentWeatherService } from 'src/app/Services/current-weather.service';
 import { loadingAnimation } from '../../Animations/Loading.animations';
 
 @Component({
@@ -12,7 +13,7 @@ export class LoadingComponent implements OnInit {
   _elements : string[] = ['#ffe5ec', '#ff80a0','#ff2e63', '#800020', '#1a0006'];
   elements : string[];
 
-  constructor() {}
+  constructor(private currentWeatherService: CurrentWeatherService) {}
 
   ngOnInit(): void 
   {

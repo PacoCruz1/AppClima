@@ -10819,6 +10819,10 @@ body {
   color: #252a34;
 }
 
+body app-weather-car {
+  display: block;
+}
+
 body .repeat .card {
   float: left;
   margin: 15px !important;

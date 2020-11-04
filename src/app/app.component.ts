@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ForescatService } from './Services/forescat.service';
+import { GeolocationService } from './Services/geolocation.service';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +10,10 @@ export class AppComponent implements OnInit
 {
   title = 'ClimaAngular';
 
-  constructor(private forescatService : ForescatService){}
+  constructor(public geolocationService : GeolocationService){}
 
   ngOnInit()
   {
-    this.forescatService.$weather.subscribe(console.log);
+    // this.geolocationService.RequestGeolocation();
   }
 }

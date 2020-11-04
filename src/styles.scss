@@ -25,6 +25,11 @@ body
     background-color: $light;
     color: $dark;
 
+    app-weather-car
+    {
+        display: block;
+    }
+    
     .repeat 
     {
         .card

@@ -1,11 +1,7 @@
 @import "../../Colors";
-
-app-weather-car
+:root(.card)
 {
-    .card
-    {
-        margin-bottom: 30px;
-    }
+    display: block;
 }
 
 %longHightTemp

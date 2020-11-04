@@ -1,0 +1,7 @@
+<div *ngIf="!(geolocationService.$coords | async)">
+    <button type="button" 
+    class="btn btn-danger" 
+    (click)="geolocationService.RequestGeolocation()">Activar mi ubicacion
+    </button>
+</div>
+
