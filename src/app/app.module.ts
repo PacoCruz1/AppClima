@@ -12,6 +12,7 @@ import { WeatherCarComponent } from './Components/WeatherCar/WeatherCar.componen
 import { ForecatsComponent } from './Components/Forecats/Forecats.component';
 import { LoadingComponent } from './Components/Loading/Loading.component';
 import { GeolocationButtonComponent } from './Components/GeolocationButton/GeolocationButton.component';
+import { PruebaComponent } from './prueba/prueba.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { GeolocationButtonComponent } from './Components/GeolocationButton/Geolo
     WeatherCarComponent,
     ForecatsComponent,
     LoadingComponent,
-    GeolocationButtonComponent
+    GeolocationButtonComponent,
+    PruebaComponent
   ],
   imports: [
     BrowserModule,

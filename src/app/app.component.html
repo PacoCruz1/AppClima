@@ -4,11 +4,15 @@
     <div class="col-md-10 text-center">
         <div class="jumbotron jumbotron-fluid bg-transparent">
             <div class="container">
+                <app-prueba></app-prueba>
                 <app-current-weather></app-current-weather>
                 <app-loading></app-loading>
                 <app-forecats></app-forecats>
                 <app-geolocation-button></app-geolocation-button>  
-                {{this.geolocationService.$coords | async | json}}         
+                {{this.geolocationService.$coords | async | json}}    
+                
+                <!-- <p class="">{{ name }}</p>                     <p class="">{{ nameInput.value }}</p>  
+                <input type="text" value="{{ name }}">         <input type="text" value="{{ name }}" #nameInput> -->
             </div>
         </div>
         
